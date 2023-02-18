@@ -38,7 +38,7 @@ namespace NASA_APOD
         {
             textBox1.Multiline = true;
             textBox1.Height = 400;
-            textBox1.Width = 473;
+            textBox1.Width = 435;
 
             textBox1.ScrollBars = ScrollBars.Vertical;
 
