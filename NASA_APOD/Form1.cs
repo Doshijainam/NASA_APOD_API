@@ -48,6 +48,18 @@ namespace NASA_APOD
             string imageUrl = apod.url;
             string explanation = apod.explanation;
 
+            using (var webClient = new WebClient())
+            {
+                var imageBytes = webClient.DownloadData(imageUrl);
+                using (var ms = new MemoryStream(imageBytes))
+                {
+                    // Display the image in the PictureBox conrol
+                    pictureBox1.Image = Image.FromStream(ms);
+                }
+            }
+
+            textBox1.Text = explanation;
+
         }
     }
 }
