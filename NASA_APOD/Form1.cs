@@ -48,8 +48,6 @@ namespace NASA_APOD
             string imageUrl = apod.url;
             string explanation = apod.explanation;
 
-
-            
         }
     }
 }
