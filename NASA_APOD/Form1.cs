@@ -36,6 +36,12 @@ namespace NASA_APOD
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Multiline = true;
+            textBox1.Height = 400;
+            textBox1.Width = 473;
+
+            textBox1.ScrollBars = ScrollBars.Vertical;
+
             string url = "https://api.nasa.gov/planetary/apod";
             string api_key = "eBsR4tngUVTn1n35m7cNJhHV7Unavw8jZq6xawGl";
             var client = new RestClient(url);
